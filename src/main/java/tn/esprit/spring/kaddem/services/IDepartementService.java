@@ -11,8 +11,8 @@ public interface IDepartementService {
 
     public   Departement updateDepartement (Departement d);
 
-    public  Departement retrieveDepartement (Integer idDepart);
+    public  Departement retrieveDepartement (Integer idDepart) throws DepartementServiceImpl.DepartementNotFoundException;
 
-    public  void deleteDepartement(Integer idDepartement);
+    public  void deleteDepartement(Integer idDepartement) throws DepartementServiceImpl.DepartementNotFoundException;
 
 }
